@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jaffe.circlepoject.Player">
+
+    <LinearLayout
+        android:id="@+id/debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/horBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Make Horizontal" />
+
+        <Button
+            android:id="@+id/verBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Make Vertical" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prefs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playToMM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:text="Main Menu" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:scaleType="fitXY"
+            android:src="@drawable/backarrow"
+            android:layout_width="1dp" />
+
+        <Button
+            android:id="@+id/levels"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:text="Level Select" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:scaleType="fitXY"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:src="@drawable/backarrow"
+            android:layout_width="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="40"
+            android:background="@drawable/background">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pScoreMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Score: 0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/HighScores"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="High Scores" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
